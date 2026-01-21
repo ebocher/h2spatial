@@ -1,26 +1,9 @@
 /**
- * h2spatial is a library that brings spatial support to the H2 Java database.
+ *  CeCILL FREE SOFTWARE LICENSE AGREEMENT
  *
- * h2spatial is distributed under GPL 3 license. It is produced by the "Atelier SIG"
- * team of the IRSTV Institute <http://www.irstv.fr/> CNRS FR 2488.
+ * Version 2.1 dated 2013-06-21
  *
- * Copyright (C) 2007-2012 IRSTV (FR CNRS 2488)
- *
- * h2patial is free software: you can redistribute it and/or modify it under the
- * terms of the GNU General Public License as published by the Free Software
- * Foundation, either version 3 of the License, or (at your option) any later
- * version.
- *
- * h2spatial is distributed in the hope that it will be useful, but WITHOUT ANY
- * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
- * A PARTICULAR PURPOSE. See the GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License along with
- * h2spatial. If not, see <http://www.gnu.org/licenses/>.
- *
- * For more information, please consult: <http://www.orbisgis.org/>
- * or contact directly:
- * info_at_ orbisgis.org
+ * http://www.cecill.info/licences/Licence_CeCILL_V2.1-en.txt
  */
 package org.h2spatial.manual;
 
@@ -75,11 +58,10 @@ public class DatatypeGeometry {
 	}
 
 
-	
-	
-	
+	/**
+	 * Create a spatial database
+	 */
 	public static void createdb(){
-		
 		try {
 			Class.forName("org.h2.Driver");
 		
@@ -100,17 +82,11 @@ public class DatatypeGeometry {
 		prep.setBytes(2, wkb);
 		prep.executeUpdate();
 		
-		
-		System.out.println("Fin");
-		
 		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (ParseException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

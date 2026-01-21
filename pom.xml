@@ -5,7 +5,7 @@
         <groupId>h2spatial</groupId>
         <artifactId>h2spatial</artifactId>
         <name>h2spatial</name>
-        <version>1.0.1</version>
+        <version>1.0.0</version>
         <url>http://www.orbisgis.org</url>
         <repositories>
                 <repository>
@@ -25,22 +25,13 @@
                         <groupId>com.vividsolutions</groupId>
                         <artifactId>jts</artifactId>
                         <version>1.12</version>
-                        <scope>compile</scope>
                 </dependency>
                 <dependency>
                         <groupId>com.h2database</groupId>
                         <artifactId>h2</artifactId>
                         <version>1.0.20070617</version>
-                        <scope>compile</scope>
                 </dependency>
         </dependencies>
-        <distributionManagement>
-                <repository>
-                        <id>IRSTV</id>
-                        <name>IRSTV repository</name>
-                        <url>scp://ateliersig@repo.orbisgis.org:/var/www/repo.orbisgis.org/</url>
-                </repository>
-        </distributionManagement>
         <build>
                 <plugins>
                         <plugin>
